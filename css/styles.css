@@ -231,10 +231,20 @@ body {
     flex-wrap: wrap;
 }
 
+
 .feature-list .item {
     margin-right: 30px;
     width: 270px;
 }
+
+.feature-list .item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: var(--grey-color);
+    margin-bottom: 30px;
+}
+
 
 .feature-list .item:nth-last-child(-n + 1) {
     margin-right: 0px;
