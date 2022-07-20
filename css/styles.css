@@ -28,6 +28,14 @@ html {
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -65,8 +73,7 @@ body {
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
     width: 1200px;
@@ -170,11 +177,15 @@ body {
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -217,12 +228,12 @@ body {
 
 /* Feature */
 
-.features-section {
+.features.section {
     padding-top: 94px;
     padding-bottom: 47px;
 }
 
-.features {
+.features-title {
     display: none;
 }
 
@@ -237,14 +248,20 @@ body {
     width: 270px;
 }
 
-.feature-list .item::before {
+.icon-background {
     display: block;
-    content: "";
-    height: 120px;
-    background-color: var(--grey-color);
     margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    padding: 25px 102px;
+    background-color: var(--grey-color);
 }
 
+.feature-icon {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .feature-list .item:nth-last-child(-n + 1) {
     margin-right: 0px;
@@ -295,42 +312,43 @@ body {
     padding-bottom: 94px;
 }
 
+.box {
+    margin-right: 30px;
+    width: 270px;
+    height: 428px;
+    box-shadow: 0px 1px 3px
+    rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-white-color);
+}
+
+.box:nth-last-child(-n + 1) {
+    margin-right: 0px;
+}
+
 .members {
     display: flex;
 }
 
-.members-list {
-    margin-right: 30px;
-}
-
-.members-list:nth-last-child(-n + 1) {
-    margin-right: 0px;
-}
-
 .team-members {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
 }
 
 .members .title {
-    margin-top: 0;
     margin-bottom: 9px;
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    line-height: 1.2;
 }
 
 .members-position {
-    margin-top: 0;
-    margin-bottom: 0;
     color: var(--secondary-text-color);
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
-    
 }
+
 
 /* Portfolio.css */
 
