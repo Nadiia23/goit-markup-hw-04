@@ -369,7 +369,7 @@ body {
     margin-right: 10px;
     width: 44px;
     height: 44px;
-    background-color: red;
+    background-color: var(--primary-white-color);
     border-radius: 50%;
 }
 
@@ -386,6 +386,42 @@ body {
 .social-link:focus .social-icon {
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
+}
+
+/* -------------------------CUSTOMERS------------------------------ */
+
+.customers-list{
+    display: flex;
+    justify-content: center;
+}
+
+.customers-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4%;
+}
+
+.customers-link:not(:last child) {
+    margin-right: 0px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.customers-icon {
+    fill: #AFB1B8;
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+    fill: var(--accent-color);
 }
 
 /* Portfolio.css */
@@ -536,6 +572,11 @@ body {
 .footer-list span:hover,
 .footer-list span:focus {
     color: var(--accent-color);
+}
+
+.conection-list {
+    display: flex;
+    justify-content: center;
 }
 
 
