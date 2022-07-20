@@ -30,8 +30,6 @@ html {
 
 h1,
 h2,
-h3,
-h4,
 p {
     margin: 0;
 }
@@ -137,6 +135,14 @@ body {
     margin-left: 50px;
 }
 
+.header-icon {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
 .header-contacts .link {
     color: var(--secondary-text-color);
     /* text-decoration: none; */
@@ -149,6 +155,12 @@ body {
 .header-contacts .link:hover,
 .header-contacts .link:focus {
     color: var(--accent-color);
+}
+
+.header-contacts .link:hover .header-icon,
+.header-contacts .link:focus .header-icon{
+    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* ------------------------ HERO --------------------- */
@@ -248,7 +260,7 @@ body {
     width: 270px;
 }
 
-.icon-background {
+.features-icon-background {
     display: block;
     margin-bottom: 30px;
     width: 270px;
@@ -306,7 +318,7 @@ body {
 
 /* Our company */
 
-.company {
+.team-section {
     background-color: var(--grey-color);
     padding-top: 94px;
     padding-bottom: 94px;
@@ -328,7 +340,7 @@ body {
     margin-right: 0px;
 }
 
-.members {
+.members-list {
     display: flex;
 }
 
@@ -340,7 +352,8 @@ body {
     text-align: center;
 }
 
-.members .title {
+.team-members .title {
+    margin-top: 0;
     margin-bottom: 9px;
     color: var(--title-text-color);
 }
@@ -349,6 +362,31 @@ body {
     color: var(--secondary-text-color);
 }
 
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.social-icon {
+    fill: #AFB1B8;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+}
 
 /* Portfolio.css */
 
